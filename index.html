@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>33_homework_theeverygirl</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./fontawesome-free-6.2.0-web/css/all.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Actor&family=Amiko:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caramel&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .topbg {
+        min-height: 110px;
+        background: url(./33_image/the-everygirl-header-1.gif);
+        background-size: cover;
+        background-position: center;
+      }
+      /* @media screen and (max-width: 576) {
+                .topbg {
+                  background: url(./33_image/teg-header-bar-gg-mobile.gif);
+                }
+              } */
+
+      .logo {
+        font-family: "Amiko", sans-serif;
+        font-size: 15px;
+      }
+      @media screen and (min-width: 768px) {
+        .mt-lg {
+          margin-top: 20px !important;
+        }
+      }
+      @media screen and (min-width: 0px) {
+        .mt-0 {
+          margin-top: 19px !important;
+        }
+      }
+
+      .mn {
+        font-size: 10px;
+        background-color: #fef3ef;
+      }
+
+      @media screen and (max-width: 576px) {
+        .border-n {
+          border: 0px !important;
+          background-color: transparent;
+        }
+      }
+      .bar2 {
+        width: auto;
+        height: auto;
+        background-color: #f0efea;
+        font-family: "Amiko", sans-serif;
+        font-size: 10px;
+        border-bottom: 1px solid black;
+      }
+      .box0 {
+        position: relative;
+      }
+      .box1 {
+        width: 100%;
+        height: 500px;
+        background-image: url(./33_image/elfster-the-everygirl-gallery.png);
+        background-size: cover;
+        background-position: bottom;
+        border-right: 1px solid black;
+        position: relative;
+      }
+
+      .box1word {
+        width: 70%;
+        min-height: 10px;
+        border: 1px solid black;
+        background-color: white;
+        text-align: left;
+        font-family: "Playfair Display", serif;
+        font-size: 20px;
+        padding: 20px;
+        padding-left: 50px;
+        position: absolute;
+        bottom: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .box1littleword {
+        width: 100px;
+        min-height: 10px;
+        border: 1px solid black;
+        background-color: #f0efea;
+        text-align: center;
+        font-family: "Amiko", sans-serif;
+        padding-top: 2px;
+        font-size: 10px;
+        position: absolute;
+        bottom: 170px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      @media screen and (max-width: 576px) {
+        .box1littleword {
+          margin-bottom: 60px;
+        }
+      }
+
+      .box2 {
+        width: auto;
+        min-height: 500px;
+      }
+
+      .box2-0 {
+        min-height: 1px;
+        font-size: 70px;
+        text-align: center;
+        line-height: 50px;
+        font-family: "Caramel", cursive;
+      }
+
+      .box2-1 {
+        border: 1px solid black;
+      }
+      .box2-1-1 {
+        width: 35%;
+        height: 100px;
+        background-image: url(./33_image/diet-culture-3-474x316.jpeg);
+        background-size: cover;
+      }
+      .box2-2 {
+        border: 1px solid black;
+      }
+
+      .box2-1-2 {
+        width: 35%;
+        height: 100px;
+        background-image: url(./33_image/the-everygirl-feature-winter-wedding-474x316.jpeg);
+        background-size: cover;
+      }
+
+      .box2-3 {
+        border: 1px solid black;
+      }
+
+      .box2-1-3 {
+        width: 35%;
+        height: 100px;
+        background-image: url(/33_image/and-thats-what-you-really-missed-teg-2-474x316.jpeg);
+        background-size: cover;
+      }
+
+      .news {
+        display: inline-block;
+        width: 100%;
+        min-height: 10px;
+        border: 1px solid rgba(80, 80, 80, 0.782);
+        border-top: 0;
+        padding: 0;
+        padding-top: 5px;
+        padding-bottom: 0px;
+        background-color: #ecf7e6;
+      }
+      .ad {
+        width: 90%;
+        border: 1px solid black;
+        background-color: #f0ede7;
+        position: relative;
+      }
+      .ad1 {
+        width: 100%;
+        margin-left: 10px;
+        overflow: hidden;
+      }
+      .ad22 {
+        height: 300px;
+        overflow: hidden;
+      }
+      .ad22 > img {
+        width: 100%;
+        object-fit: cover;
+      }
+      .ad3 {
+        margin-top: 6%;
+        line-height: 40px;
+      }
+
+      .card0 {
+        margin-top: 80px;
+      }
+      .card90 {
+        border: 1px solid black;
+      }
+      .card91 {
+        width: 100%;
+        font-family: "Playfair Display", serif;
+        font-size: 35px;
+      }
+      @media screen and (max-width: 576px) {
+        .card91 {
+          margin-left: 30px !important;
+        }
+      }
+
+      .card92 {
+        border: 1px solid black;
+      }
+
+      .card922 {
+        width: 100%;
+        aspect-ratio: 6/4;
+        background-size: cover;
+        background-position: center;
+        background-image: url(./33_image/card9-2.jpeg);
+        margin-bottom: 7px;
+      }
+      .card9issue {
+        width: auto;
+        min-height: 1px;
+        text-align: center;
+        background-color: #f0efea;
+        left: 50%;
+        transform: translateX(0%);
+      }
+
+      .card91issue {
+        width: 120px;
+        height: auto;
+        text-align: center;
+        background-color: #f0efea;
+        margin-top: 40px;
+        transform: translateX(34%);
+      }
+
+      .card923 {
+        width: 100%;
+        aspect-ratio: 1/1;
+        background-size: cover;
+        background-position: center;
+        background-image: url(./33_image/card9-3.jpeg);
+      }
+
+      .cardsecond {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        margin-right: 3%;
+      }
+      .cardsecond2 {
+        border: 1px solid black;
+      }
+      .cardimg {
+        width: 100%;
+        aspect-ratio: 3/4;
+        background-size: cover;
+        background-position: center;
+        background-image: url(./33_image/cardimng.jpeg);
+      }
+      @media screen and (max-width: 576px) {
+        .cardimg {
+          border-top: 1px solid black !important;
+        }
+      }
+      .cardimg2 {
+        width: 100%;
+        aspect-ratio: 4/3;
+        background-size: cover;
+        background-position: center;
+        background-image: url(./33_image/cardsecond2.png);
+      }
+
+      .card93 {
+        margin-top: -50px;
+      }
+
+      @media screen and (min-width: 576px) {
+        .card93 {
+          margin-top: 0 !important;
+        }
+      }
+
+      .card93-2 {
+        border: 1px solid black;
+      }
+
+      .cardimg5 {
+        width: 100%;
+        aspect-ratio: 4/3;
+        background-size: cover;
+        background-position: center;
+        background-image: url(./33_image/card95.jpeg);
+      }
+
+      .card9issue4 {
+        width: auto;
+        min-height: 1px;
+        text-align: center;
+        background-color: #f0efea;
+      }
+
+      .ad2 {
+        width: auto;
+        height: 100px;
+        background-color: #fef3ef;
+      }
+
+      .issue1 {
+        font-size: 40px;
+        font-family: "Playfair Display", serif;
+        text-align: center;
+      }
+
+      .img_card {
+        width: 100%;
+        aspect-ratio: 1/1;
+        background-image: url(./33_image/card1.png);
+        background-size: cover;
+        background-position: center;
+      }
+      .img_card1 {
+        width: 100%;
+        aspect-ratio: 1/1;
+        background-image: url(./33_image/card2.jpeg);
+        background-size: cover;
+        background-position: center;
+      }
+
+      .img_card2 {
+        width: 100%;
+        aspect-ratio: 1/1;
+        background-image: url(./33_image/card3.jpeg);
+        background-size: cover;
+        background-position: center;
+      }
+
+      .img_card3 {
+        width: 100%;
+        aspect-ratio: 1/1;
+        background-image: url(./33_image/card4.png);
+        background-size: cover;
+        background-position: center;
+      }
+      .img_card4 {
+        width: 100%;
+        aspect-ratio: 1/1;
+        background-image: url(./33_image/card5.jpeg);
+        background-size: cover;
+        background-position: center;
+      }
+
+      .img_card5 {
+        width: 100%;
+        aspect-ratio: 1/1;
+        background-image: url(./33_image/card6.jpeg);
+        background-size: cover;
+        background-position: center;
+      }
+      .img_card6 {
+        width: 100%;
+        aspect-ratio: 1/1;
+        background-image: url(./33_image/card7.jpeg);
+        background-size: cover;
+        background-position: center;
+      }
+      .img_card7 {
+        width: 100%;
+        aspect-ratio: 1/1;
+        background-image: url(./33_image/card8.png);
+        background-size: cover;
+        background-position: center;
+      }
+
+      .card_issue {
+        width: 150px;
+        height: 20px;
+        background-color: #f0efea;
+        font-size: 6px;
+        margin-top: 15px;
+        text-align: center;
+      }
+
+      .ad2word {
+        text-align: center;
+        transform: translateY(85%);
+        font-size: x-large;
+        font-family: "Playfair Display", serif;
+      }
+      @media screen and (max-width: 576px) {
+        .ad2word {
+          font-size: 15px;
+          transform: translateY(70%);
+        }
+      }
+
+      .ad2mail {
+        padding-left: 25%;
+        transform: translateY(100%);
+      }
+
+      @media screen and (min-width: 576px) {
+        .ad2mail {
+          padding-left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="topbg"></div>
+      <nav>
+        <div
+          class="container-fluid border border-dark border-1 border-start-0 border-end-0 p-0 text-sm-center"
+        >
+          <div class="row m-0 p-0">
+            <div class="col-auto logo m-3 mt-lg mt-0 order-2 order-sm-0 ms-4">
+              T H E &nbsp;&nbsp; E V E R Y G I R L
+            </div>
+
+            <div
+              class="col-auto d-flex m-3 d-none d-md-block align-items-center ms-auto"
+            >
+              <i class="fa-brands fa-instagram me-3"></i>
+              <i class="fa-brands fa-facebook-f me-3"></i>
+              <i class="fa-brands fa-pinterest-p me-3"></i>
+              <i class="fa-brands fa-twitter me-3"></i>
+              <i class="fa-brands fa-tiktok me-3"></i>
+            </div>
+            <div
+              class="col-auto align-items-center d-flex flex-grow-5 me-md-3 order-1 order-sm-0 ps-4"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div
+              class="col-auto border border-dark border-1 border-end-0 border-top-0 border-bottom-0 mn p-1 ps-2 px-md-4 order-3 order-sm-0 border-n ps-0 pe-0"
+            >
+              MENU<i class="fa-solid fa-bars d-flex fs-4 ms-2"></i>
+            </div>
+          </div>
+        </div>
+        <div class="bar2 container-fluid d-none d-md-block">
+          <div class="row p-2 justify-content-center">
+            <div class="col-auto">CAREER & FINANCE</div>
+            <div class="col-auto">FASHION</div>
+            <div class="col-auto">BEAUTY</div>
+            <div class="col-auto">LIVING</div>
+            <div class="col-auto">WELLNESS</div>
+            <div class="col-auto">SEX & RELATIONSHIPS</div>
+            <div class="col-auto">TECH BACKGROUNDS</div>
+            <div class="col-auto">HOLIDAY</div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container-fluid border border-dark border-1 border-top-0">
+        <div class="row">
+          <div class="col-12 col-md-7 p-0 box0">
+            <div class="box1">
+              <div class="box1word">
+                Our Editors' Best Kept Secret for Holiday Gift Exchanges
+              </div>
+            </div>
+            <div class="box1littleword">HOLIDAY</div>
+          </div>
+          <div class="col-12 col-md-5 p-0">
+            <div class="column box2 p-5 pt-2">
+              <div class="col mb-4 box2-0">new+now</div>
+              <div class="col d-flex box2-1 mb-4">
+                <div class="col-4 box2-1-1"></div>
+                <div class="col pt-3 ps-2 ps-md-3">
+                  7 Ways To Celebrate New Year’s Eve at Home
+                </div>
+              </div>
+              <div class="col d-flex box2-2 mb-4">
+                <div class="col-4 box2-1-2"></div>
+                <div class="col pt-4 ps-2 p-3 ps-md-3">
+                  5 Ways To Improve Your Finances RN
+                </div>
+              </div>
+              <div class="col d-flex box2-3 mb-2">
+                <div class="col-4 box2-1-3"></div>
+                <div class="col pt-4 ps-2 p-3 ps-md-3">
+                  The Best Pieces to Snag at 50% Off
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news">
+        <marquee
+          onMouseOver="this.stop()"
+          onMouseOut="this.start()"
+          scrollamount="3"
+        >
+          &nbsp;&nbsp;&bull;&nbsp;&nbsp; The Single Purchase That Made Me
+          Actually Want To Sit At My Desk All Day &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+          Say This Not That: The Only Email Writing Guide You’ll Ever
+          Need&nbsp;&bull;&nbsp; I Tripled My Salary in Just 5 Years—Here’s How
+          &nbsp;&nbsp;&bull;&nbsp;&nbsp; 5Things To Do Right Now That Will Help
+          You Nail Your Performance Review &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+        </marquee>
+      </div>
+      <div class="container mt-5 mb-5 ad">
+        <div class="row g-5">
+          <div class="col-12 col-md-3">
+            <img class="ad1" src="./33_image/gotd-homepage.gif" />
+          </div>
+          <div class="col-md-4 d-md-block d-none">
+            <div class="ad22 pt-2">
+              <img
+                src="./33_image/Copy-of-TEG-Gift-of-the-Day-Product-Template-8.png"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4 ad3">
+            <div>HELFRICH COLLECTIVE</div>
+            <div class="fs-5">It's Not That Serious Crewneck</div>
+            <div>
+              This oversized crewneck features the phrase "It's not that
+              serious"—a good reminder for when life throws one of its
+              occasional curve balls.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-10 col-md-4 p-0 pe-md-5">
+            <p class="card91 flex-column">
+              It’s giving thanks: your guide to making this Thanksgiving one to
+              remember
+            </p>
+            <div class="card90 card0 d-none d-md-block">
+              <p class="card91issue">ENTERTAINING</p>
+              <p class="p-4 ms-3 pb-5">
+                9 Thanksgiving Decor Ideas That Are Incredibly Easy to Re-create
+              </p>
+            </div>
+          </div>
+          <div class="col-6 col-md-5 pe-md-4 p-md-0">
+            <div class="card92 flex-column">
+              <div class="card922"></div>
+              <div class="p-3">
+                <span class="card9issue">THANKSGIVING</span>
+                <p>70 of the Best Thanksgiving Recipes to Make This Year</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-md-0 p-0 pe-3 pe-md-0">
+            <div class="card92 flex-column">
+              <div class="p-md-3 py-md-4 p-3 p-md-2">
+                <span class="card9issue">FASHION</span>
+                <span>
+                  The Cool Girl’s Guide to Being the Best-Dressed Cousin on
+                  Thanksgiving
+                </span>
+              </div>
+              <div class="card923"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-md-4 ps-md-0 pe-md-5 card93">
+            <div class="cardimg cardsecond"></div>
+            <div class="d-block d-md-none card93-2 pt-3 pt-md-0">
+              <span class="card9issue ms-2">ENTERTAINING</span>
+              <p class="p-2">
+                9 Thanksgiving Decor Ideas That Are Incredibly Easy to Re-create
+              </p>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 p-2 pt-3 pt-md-0 pe-3 ps-1 card94">
+            <div class="flex-column cardsecond2">
+              <div class="cardimg2"></div>
+              <div class="p-md-5 p-3">
+                <span class="card9issue4">OUTFITS</span>
+                <p>
+                  How To Recreate Every One of Rachel Green’s Thanksgiving
+                  Outfits
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-md-4 d-none d-md-block pt-0 pe-0">
+            <div class="flex-column cardsecond2">
+              <div class="p-5">
+                <span class="card9issue4">TRADER JOE'S</span>
+                <p>
+                  7 Things I Always Grab at Trader Joe’s Before Hosting a Party
+                </p>
+              </div>
+              <div class="cardimg5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container"></div>
+      <div class="issue1 mb-3 mt-5">Latest Articles</div>
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-sm-6 col-md-3 mb-3">
+            <div class="card1">
+              <div class="img_card"></div>
+              <p class="card_issue">FOOD & DRINK</p>
+              <p>
+                <a
+                  href="https://theeverygirl.com/thanksgiving-sides/"
+                  class="link-dark"
+                  style="
+                    text-decoration: none;
+                    font-family: 'Playfair Display', serif;
+                  "
+                  >27 No-Hassle Sides to Contribute to This Year’s
+                  Thanksgiving</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mb-3">
+            <div class="card1">
+              <div class="img_card1"></div>
+              <p class="card_issue">MIND</p>
+              <p>
+                <a
+                  href="https://theeverygirl.com/birth-order-theory/"
+                  class="link-dark"
+                  style="
+                    text-decoration: none;
+                    font-family: 'Playfair Display', serif;
+                  "
+                  >Some Experts Say Birth Order Can Explain Your Personality–Is
+                  it True?</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mb-3">
+            <div class="card1">
+              <div class="img_card2"></div>
+              <p class="card_issue">THANKSGIVING</p>
+              <p>
+                <a
+                  href="https://theeverygirl.com/thanksgiving-episodes-to-stream/"
+                  class="link-dark"
+                  style="
+                    text-decoration: none;
+                    font-family: 'Playfair Display', serif;
+                  "
+                  >The Best Thanksgiving Episodes To Stream This Year</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mb-3">
+            <div class="card1">
+              <div class="img_card3"></div>
+              <p class="card_issue">DECOR & STYLING</p>
+              <p>
+                <a
+                  href="https://theeverygirl.com/holiday-decor-trends/"
+                  class="link-dark"
+                  style="
+                    text-decoration: none;
+                    font-family: 'Playfair Display', serif;
+                  "
+                  >The Holiday Decor Trends That Are Replacing Our Old Standby
+                  Decorations</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mb-3">
+            <div class="card1">
+              <div class="img_card4"></div>
+              <p class="card_issue">BEAUTY</p>
+              <p>
+                <a
+                  href="https://theeverygirl.com/rose-inc-favorites/"
+                  class="link-dark"
+                  style="
+                    text-decoration: none;
+                    font-family: 'Playfair Display', serif;
+                  "
+                  >Our Editor Would Sell Her Soul for This Brand’s Blush + 9
+                  Products Just as Good</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mb-3">
+            <div class="card1">
+              <div class="img_card5"></div>
+              <p class="card_issue">THANKSGIVING</p>
+              <p>
+                <a
+                  href="23 Thanksgiving Recipes So Good, No One Will Know They’re Actually Healthy"
+                  class="link-dark"
+                  style="
+                    text-decoration: none;
+                    font-family: 'Playfair Display', serif;
+                  "
+                  >23 Thanksgiving Recipes So Good, No One Will Know They’re
+                  Actually Healthy</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mb-3">
+            <div class="card1">
+              <div class="img_card6"></div>
+              <p class="card_issue">SHOPPING</p>
+              <p>
+                <a
+                  href="https://theeverygirl.com/cozy-season-essentials/"
+                  class="link-dark"
+                  style="
+                    text-decoration: none;
+                    font-family: 'Playfair Display', serif;
+                  "
+                  >15 Cozy Season Essentials You Need To Spend the Next Few
+                  Months Indoors</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mb-3">
+            <div class="card1">
+              <div class="img_card7"></div>
+              <p class="card_issue">FASHION</p>
+              <p>
+                <a
+                  href="https://theeverygirl.com/stylish-winter-accessories/"
+                  class="link-dark"
+                  style="
+                    text-decoration: none;
+                    font-family: 'Playfair Display', serif;
+                  "
+                  >20 Chic Accessories That Will Elevate Any Holiday Outfit</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid ad2 m-0">
+        <div class="row">
+          <div class="col-12 col-md-8 p-0 ad2word">
+            <span>Want exclusive content? We’ve got you covered.</span>
+          </div>
+
+          <div class="col-6 col-md-4 d-inline-block ad2mail">
+            <input type="text" value="Email" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
